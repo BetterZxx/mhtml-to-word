@@ -1,0 +1,15 @@
+{
+  "name": "mhtml-to-word",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mhtmlToWord.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhangxiang",
+  "license": "ISC",
+  "dependencies": {
+    "baidu-template-pro": "^1.0.0",
+    "file-saver": "^2.0.2"
+  }
+}
