@@ -2,8 +2,8 @@
 ;(function(window){
   //符合commonjs规范引入依赖
   if(typeof module !== 'undefined'){
-    var saveAs = require('file-saver')
-    var baidu = require('baiduTemplatePro')
+    window.saveAs = require('file-saver')
+    window.baidu = require('baidu-template-pro')
   }
   function getModelHtml(mhtml,style=''){
     return`
@@ -41,8 +41,8 @@
     }
 
     //没有模板引擎时，将获取节点的html字符串生成模板
-    let html = typeof baidu !== 'undefined'?baidu.template(getModelHtml(mhtml,style),data)():getModelHtml(mhtml)
-    console.log(html)
+    let html = typeof baidu !== 'undefined'?baidu.template(getModelHtml(mhtml,style),data):getModelHtml(mhtml)
+    
     let blob = new Blob([html],{type:'application/msword;charset=utf-8'})
     saveAs(blob,name+'.doc')
   }

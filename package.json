@@ -1,10 +1,14 @@
 {
   "name": "mhtml-to-word",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "mhtmlToWord.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BetterZxx/mhtml-to-word"
   },
   "author": "zhangxiang",
   "license": "ISC",
