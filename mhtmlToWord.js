@@ -7,7 +7,7 @@
   }
   function getModelHtml(mhtml,style=''){
     return`
-      Content-Type: text/html; charset="utf-8"
+	Content-Type: text/html; charset="utf-8"
       <!DOCTYPE html>
       <html>
       <head>
@@ -22,7 +22,7 @@
     `
   }
   //主函数
-  let exportWord = ({mhtml,style,name,data,selector})=>{
+  let exportWord = ({mhtml,style,filename,data,selector})=>{
     
     if(selector){
       let nodes = window.document.querySelectorAll(selector)
@@ -44,7 +44,7 @@
     let html = typeof baidu !== 'undefined'?baidu.template(getModelHtml(mhtml,style),data):getModelHtml(mhtml)
     
     let blob = new Blob([html],{type:'application/msword;charset=utf-8'})
-    saveAs(blob,name+'.doc')
+    saveAs(blob,filename+'.doc')
   }
   //添加exportWord到全局对象
   window.exportWord = window.exportWord||exportWord

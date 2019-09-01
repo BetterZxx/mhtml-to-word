@@ -1,6 +1,6 @@
 {
   "name": "mhtml-to-word",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "mhtmlToWord.js",
   "scripts": {

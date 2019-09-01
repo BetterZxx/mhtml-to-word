@@ -1,5 +1,6 @@
 ## mhtml-to-word
 mhtmlToWord.js是将html模板字符串通过模板引擎转换并导出word文件的js库，它支持浏览器环境和nodejs支持环境如react，vue等
+### 演示地址:[http://118.24.95.11:8888](http://118.24.95.11:8888)
 ### 依赖
 + FileSaver.js
 + baiduTemplatePro.js (可选)
