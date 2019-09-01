@@ -33,7 +33,7 @@ exportWord({
     filename: "exportTest"
 })
 ```
-##### 使用模板字符串
+##### 使用模板字符串(模板使用方法: [baidu-template-pro](https://github.com/BetterZxx/baidu-template-pro))
 ```
 var model = `
 <div>
